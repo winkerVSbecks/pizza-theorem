@@ -1,0 +1,97 @@
+
+@import '~basscss/css/basscss.css';
+
+input[type=range] {
+  vertical-align: middle;
+  background-color: transparent;
+}
+
+.range-light {
+  color: #001FFC;
+  -webkit-appearance: none;
+  padding-top: 8px;
+  padding-top: 0.5rem;
+  padding-bottom: 8px;
+  padding-bottom: 0.5rem;
+}
+
+.range-light::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  position: relative;
+  width: 8px;
+  width: 0.5rem;
+  height: 20px;
+  height: 1.25rem;
+  border-radius: 3px;
+  background-color: currentcolor;
+  cursor: pointer;
+  margin-top: -8px;
+  margin-top: -0.5rem;
+}
+
+/* Touch screen friendly pseudo element */
+.range-light::-webkit-slider-thumb:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -8px;
+  top: -0.5rem;
+  left: -14px;
+  left: -0.875rem;
+  width: 36px;
+  width: 2.25rem;
+  height: 36px;
+  height: 2.25rem;
+  opacity: 0;
+}
+
+.range-light::-moz-range-thumb {
+  width: 8px;
+  width: 0.5rem;
+  height: 20px;
+  height: 1.25rem;
+  border-radius: 3px;
+  border-color: transparent;
+  border-width: 0;
+  background-color: currentcolor;
+  cursor: pointer;
+}
+
+.range-light::-webkit-slider-runnable-track {
+  height: 4px;
+  height: 0.25rem;
+  cursor: pointer;
+  border-radius: 3px;
+  background-color: #000000;
+  background-color: #fff;
+}
+
+.range-light::-moz-range-track {
+  height: 4px;
+  height: 0.25rem;
+  cursor: pointer;
+  border-radius: 3px;
+  background-color: #000000;
+  background-color: #fff;
+}
+
+.range-light:focus {
+  outline: none;
+}
+
+.range-light:focus::-webkit-slider-thumb {
+  outline: none;
+  border: 0;
+  box-shadow: 0 0 1px 2px currentcolor;
+}
+
+.range-light:focus::-moz-range-thumb {
+  outline: none;
+  border: 0;
+  box-shadow: 0 0 0 3px #fff;
+}
+
+body {
+  background-color: #D1DEF5;
+  color: #001FFC;
+}
