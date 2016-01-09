@@ -2,7 +2,7 @@
   "name": "pizza-theorem",
   "version": "1.0.0",
   "scripts": {
-    "build": "webpack --config webpack.build.js --bail -p && cp index.html build",
+    "build": "webpack --config webpack.build.js --bail -p && cp index.html favicon.ico build",
     "deploy": "bash deploy.sh",
     "start": "node server.js"
   },
